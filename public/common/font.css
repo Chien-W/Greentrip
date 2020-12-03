@@ -1,0 +1,11 @@
+@font-face {
+    font-family: Rubik;
+    src:url("./font/Rubik-Medium.ttf");
+}
+@font-face {
+    font-family: SimHei;
+    src: url("./font/simhei.ttf");
+}
+*{
+  font-family: SimHei;
+}

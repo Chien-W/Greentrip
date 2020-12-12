@@ -2,7 +2,6 @@
     <div class="content">
         <card :card_desc="desc_list1"/>
         <card2 class="card_style" :card_desc="desc_list2"/>
-
     </div>
 </template>
 

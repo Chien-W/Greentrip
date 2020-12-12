@@ -1,7 +1,8 @@
 <template>
+
   <div class="waterball">
-    <!-- <div class="waterball_front"></div>
-    <div class="waterball_back"></div> -->
+    <div class="waterball_front"></div>
+    <div class="waterball_back"></div>
     <div v-for="(point,i) in points" :key="i" class="pointsball" :class="point.class" ref="ball" @click="collect(i)">
       {{point.value}}
     </div>
@@ -71,7 +72,7 @@ export default {
   position: relative;
   left: 50%;
   top:81px;
-  transform: translateX(-50%);
+  transform: translateX(-50%);/*水平居中*/
   width: 220px;
   height: 220px;
   border: 8px solid #DDFEE4;

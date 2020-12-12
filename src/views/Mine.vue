@@ -41,23 +41,26 @@
       <div class="head">
         <p>我的兑换</p>
       </div>
-      <ul class="body">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+      <div class="content">
+        <card5 :card_desc="desc_list1"/>
+        <card5 class="card_style" :card_desc="desc_list1"/>
+      </div>
+
     </div>
   </div>
 </template>
 
 <script>
 import {mapState} from 'vuex'
+import card5 from "../components/shop/card5";
 export default {
   name : 'mine',
   data(){
     return {
+      desc_list1 : [
+        {id : 1,content:'加速器'},
+        {id : 2,content:'提速10%'},
+      ],
       hasNewnotification : true,
     }
   },
@@ -69,10 +72,26 @@ export default {
   methods:{
 
   },
+  components:{
+    card5
+  }
 }
 </script>
 
-<style scoped>
+<style scoped lang="less">
+  @basefont : 20px;
+  .content{
+    margin: 0 auto;
+    width: 352rem / @basefont;
+    height: 540rem / @basefont;
+    background-color: white;
+    box-shadow: 0px 2rem / @basefont 10rem / @basefont rgba(0,0,0,.13);
+    border-radius: 12rem / @basefont;
+  .card_style{
+    margin-top: 20rem / @basefont;
+  }
+  }
+
 .mine{
   width: 100%;
   background-image: url(../assets/mine/background.svg);
@@ -230,7 +249,7 @@ export default {
   margin: 0.5rem auto 0 auto; 
 }
 .game{
-  width: 90%;
+  width: 92%;
   margin: 0.5rem auto 0 auto;
   box-shadow: 0 1px 8px 0 #ccc;
   border-radius: 0.5rem;

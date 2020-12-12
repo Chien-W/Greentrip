@@ -6,7 +6,7 @@
       <!--      积分商城-->
       <span>积分商城</span>
       <!--      通知   跳转到商城通知-->
-      <a href="#" class="card_bag" @click.prevent="handlemethod">
+      <a href="#" class="card_bag" @click.prevent="handlemethod" @click="has_notification = false">
         <!--        通知红点-->
         <div class="bell" v-if="has_notification"></div>
       </a>

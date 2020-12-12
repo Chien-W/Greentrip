@@ -1,13 +1,13 @@
 <template>
     <!--    card组件-->
     <div class="card_component">
-        <div class="card3">
+        <div class="card5">
             <!--        card标题-->
             <span class="title">{{card_title}}</span>
             <span class="coin">{{card_coin}}</span>
             <!--        分割线-->
             <div class="divider"></div>
-            <img src="../../assets/shop/card_3.png" alt="">
+            <img src="../../assets/shop/card_2.png" alt="">
             <!--        简要描述-->
             <div class="desc">
                 <ul>
@@ -26,7 +26,7 @@
 
 <script>
     export default {
-        name: "card3",
+        name: "card5",
         data() {
             return {
                 colors:['',
@@ -53,14 +53,14 @@
             //卡片标题
             card_title:{
                 type:String,
-                default:'早餐券(10元)',
+                default:'加速器(x3)',
             },
             //卡片简要描述
             card_desc:null,
             //卡片兑换的硬币数
             card_coin:{
                 type:String,
-                default : '5,000'
+                default : '200'
             }
         }
     }
@@ -72,7 +72,7 @@
         margin: 0;
         padding: 0;
     }
-    .card3{
+    .card5{
         margin:  0rem / @basefont auto;
         background-color: #00BB98;
         mask-image: url("../../assets/shop/card_bg.svg");

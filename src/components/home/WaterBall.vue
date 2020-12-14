@@ -94,11 +94,11 @@ export default {
 .waterball > .waterball_front{
   z-index: 1;
   background-image: url(./../../assets/home/water_ball_front.svg);
-  animation:front 2s linear infinite;
+  animation:front 4s linear infinite;
 }
 .waterball > .waterball_back{
   background-image: url(./../../assets/home/water_ball_back.svg);
-  animation:back 2s linear infinite;
+  animation:back 4s linear infinite;
 }
 .waterball > .pointsball{
   position: absolute;
